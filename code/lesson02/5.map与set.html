@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <Script>
+        //ES6 新出的
+        //var names = ["tom","jessy","john"];
+        //var scores = [80,90,10];
+        var map = new Map([["tom",80],["jessy",90],["john",10]]);
+        var sc = map.get("jessy");//get value from key
+        console.log(sc);
+
+        map.set("admin",312);
+        map.delete("tom");
+        console.log(map);
+
+
+        //set
+        var set = new Set([1,2,2,1,2]);
+        console.log(set);
+        set.add(4);
+        set.delete(1);
+        console.log(set);
+        console.log(set.has(2));
+    </Script>
+</head>
+<body>
+
+</body>
+</html>
