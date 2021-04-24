@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <Script>
+
+        var getAge = function(){
+            var now = new Date().getFullYear();
+            return now - this.birth;
+        }
+
+        var jessy = {
+            name:"jessy",
+            birth: 1995,
+            age: getAge
+        }
+        getAge.apply(jessy,[]);
+    </Script>
+</head>
+<body>
+
+</body>
+</html>
