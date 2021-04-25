@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-         //构造函数
-        function Student(name){
-            this.name = name;
-        }
-
-        //add a method in Student
-        Student.prototype.hello = function(){
-            alert("Hello");
-                }
-    </script>
 
 
 </head>
 <body>
+<Script>
+
+    class Student{
+        constructor(name){
+            this.name = name;
+        }
+
+        hello(){
+            alert("hello")
+        }
+    }
+
+    var jessy = new Student("jessy")
+    var kathy = new Student("kathy")
+
+    class PrimaryStudent extends Student{
+        constructor(name, grade){
+            super(name)
+            this.grade = grade;
+        }
+        myGrade(){
+            alert("I am a primary school student")
+        }
+    }
+
+    var hong = new PrimaryStudent("hong",49);
+    hong.myGrade()
+</Script>
 
 </body>
 </html>
