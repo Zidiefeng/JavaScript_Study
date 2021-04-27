@@ -25,13 +25,18 @@
     var myScript = document.createElement("script");
     myScript.setAttribute("type","text/javascript");
 
-    var myStyle = document.createElement("script");
-    myScript.setAttribute("type","text/javascript");
-    myStyle.innerHTML = 'body{background-color:green;}'
+    var myStyle = document.createElement("style");
+    myScript.setAttribute("type","text/css");
+    myStyle.innerHTML = 'body{background-color:yellow;}'
+    var head = document.getElementsByTagName('head')[0];
+    head.append(myStyle);
 
     var body = document.getElementsByTagName("body");
     //body[0].setAttribute("style","background-color:yellow");
     //body[0].style.backgroundColor="red";
+
+    var ee = document.getElementById('ee');
+    list.insertBefore(js,ee);
 
 </script>
 
