@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="parent">
+    <h1>header 1 </h1>
+    <p id="p1">p1</p>
+    <p class="p2">p2</p>
+</div>
+
+
+<script>
+    var h1 = document.getElementsByTagName("h1");
+    var p1 = document.getElementById("p1");
+    var p2 = document.getElementsByClassName("h1");
+    var parent = document.getElementById("parent");
+    var children = parent.children;
+    var lastChild = parent.lastElementChild;
+    var firstChild = parent.firstElementChild;
+
+    var self = document.getElementById("p1");
+    var parent = p1.parentElement;
+    parent.removeChild(p1);
+
+</script>
+
+</body>
+</html>

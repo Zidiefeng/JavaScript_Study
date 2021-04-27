@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="js">JavaScript</p>
+<div id="list">
+    <p id="se">JavaSE</p>
+    <p id="ee">JavaEE</p>
+    <p id="me">JavaME</p>
+</div>
+
+<script>
+    var js = document.getElementById("js");
+    var list = document.getElementById("list");
+
+    var newP = document.createElement("p");
+    newP.id="newP";
+    newP.innerText='hello, Jessy';
+    list.appendChild(newP);
+
+    var myScript = document.createElement("script");
+    myScript.setAttribute("type","text/javascript");
+
+    var myStyle = document.createElement("script");
+    myScript.setAttribute("type","text/javascript");
+    myStyle.innerHTML = 'body{background-color:green;}'
+
+    var body = document.getElementsByTagName("body");
+    //body[0].setAttribute("style","background-color:yellow");
+    //body[0].style.backgroundColor="red";
+
+</script>
+
+
+</body>
+</html>
