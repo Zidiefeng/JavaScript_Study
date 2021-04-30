@@ -4,7 +4,7 @@
 
 - [个人学习笔记](https://github.com/Zidiefeng/JavaScript_study/tree/master/docs)
 - [code](https://github.com/Zidiefeng/JavaScript_study/tree/master/code) 
-- [page]()
+- [page]
 
 ---
 
