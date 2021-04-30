@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+</head>
+<body>
+
+
+<form action="post">
+    <p>
+        <span>username: </span> <input type="text" id="username">
+    </p>
+
+    <p>
+        <span>password: </span> <input type="text" id="password">
+    </p>
+
+    <p>
+        <span>gender: </span>
+        <input type="radio" name="gender" value="female" id="girl"> Female
+        <input type="radio" name="gender" value="male" id="boy"> Male
+    </p>
+
+<!--    <input type="submit">-->
+    <button type="button" onclick="test_fun()">submit</button>
+
+</form>
+
+<script>
+    function test_fun(){
+        var uname= document.getElementById("username");
+        var pwd = document.getElementById("password");
+        console.log(uname.value);
+        console.log(pwd.value);
+
+        //MD5算法
+        pwd.value=md5(pwd.value);
+        console.log(pwd.value);
+    }
+</script>
+
+
+</body>
+</html>

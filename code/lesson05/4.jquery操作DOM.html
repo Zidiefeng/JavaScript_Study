@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+</head>
+<body>
+
+<ul id="test-ul">
+    <li class="js">JavaScript</li>
+    <li name="python">Python</li>
+</ul>
+
+
+<script>
+    $('#test-ul li[name=python]').text();
+    $('#test-ul li[name=python]').html();
+    $('#test-ul li[name=python]').html('<strong>123</strong>');
+    $('#test-ul li[name=python]').css("color","red");
+    $('#test-ul li[name=python]').css({"color":"red"});
+
+    $('#test-ul li[name=python]').hide();
+
+</script>
+
+
+</body>
+
+
+
+</html>
