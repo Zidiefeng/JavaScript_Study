@@ -1,6 +1,6 @@
-# 【狂】JavaScript
-
 # JavaScript
+
+狂神说Java系列-个人学习笔记
 
 ## 前端认知
 
